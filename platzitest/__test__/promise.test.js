@@ -17,7 +17,5 @@ import {getDataFromApi} from '../promise';
        return expect(Promise.reject('error')).rejects.toBe('error')  
      })
      
-     
-     
  });
  

@@ -8,6 +8,16 @@ import {getDataFromApi} from '../promise';
              done()
          })
      });
+
+     test('resulve un hola', () => {
+         return expect(Promise.resolve('hola')).resolves.toBe('hola')
+     });
+
+     test('error', () => {
+       return expect(Promise.reject('error')).rejects.toBe('error')  
+     })
+     
+     
      
  });
  
